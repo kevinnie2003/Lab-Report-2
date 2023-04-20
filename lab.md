@@ -1,7 +1,7 @@
-# Lab Report 2 By Kevin Nie#
+# Lab Report 2 By Kevin Nie
 
 
-# Part 2#
+# Part 2
 Here is one example from Lab 3 that has a bug, and I will show how I tested it and the systom, as well as the fixed code.
 1.
 The original code with the bug:
@@ -45,5 +45,5 @@ The original code with the bug:
   }
 ```
 
-# Part 3#
+# Part 3
 One thing that I learned from labs that is very important and beneficial is that how to use Github and write a markdown file. Now I can use Github to explore thousands of projects I am interested in, as well as writing my own projects. I can also easily create a page of my own by writing a .md file one Github.
