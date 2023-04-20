@@ -1,4 +1,5 @@
 # Lab Report 2 By Kevin Nie
+# Part 1
 
 
 # Part 2
