@@ -65,6 +65,7 @@ The fixed code:
     return newArray;
   }
 ```
+
 Change the code so that the reversed array of input array is stored in newArray and return the newArray.
 
 
