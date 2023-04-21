@@ -197,6 +197,7 @@ The original code with the bug:
   }
                                   
 ```
+                                  
 The fixed code:
                                   
 ```
