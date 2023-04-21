@@ -1,6 +1,7 @@
 # Lab Report 2 By Kevin Nie
 # Part 1
 Code for StringServer: (Server.java is implemented and also shown below)
+
 StringServer.java
 ```
 import java.io.IOException;
@@ -40,7 +41,8 @@ class StringServer {
 }
 ```
 Server.java
-```// A simple web server using Java's built-in HttpServer
+```
+// A simple web server using Java's built-in HttpServer
 
 // Examples from https://dzone.com/articles/simple-http-server-in-java were useful references
 
@@ -95,11 +97,47 @@ public class Server {
 }
 ```
 
-Screenshots of using /add-message
+Screenshots of using /add-message:
+
 <img width="418" alt="截屏2023-04-20 18 49 30" src="https://user-images.githubusercontent.com/122497019/233521713-013f5680-bc51-4ffe-b166-d735a066c11b.png">
 
+For the first screenshot with the link "http://localhost:4000/add-message?s=happy":
+
+1. The main method in StringServer.java is called with the argument 4000 as the port number.
+2. The start method in Server.java is called with the arguments 4000 (port) and a new Handler object (handler).
+3. The handleRequest method in Handler class is called with the URL "http://localhost:4000/add-message?s=happy".
+
+Relevant arguments and values of fields:
+
+* The port number is 4000.
+* The Handler object has an ArrayList<String> field named str which is empty initially.
+* The URI object passed to the handleRequest method has the path "/add-message" and the query "s=happy".
+    
+Changes in values of fields:
+
+* The str ArrayList in the Handler object will add the string "happy" to the list, making its content: ["happy"].
 
 <img width="397" alt="截屏2023-04-20 18 50 08" src="https://user-images.githubusercontent.com/122497019/233521772-87cb1e44-6b25-4bb2-8106-c993daaf1af2.png">
+
+For the second screenshot with the link "http://localhost:4000/add-message?s=sad":
+
+1. The handleRequest method in Handler class is called with the URL "http://localhost:4000/add-message?s=sad".
+
+Relevant arguments and values of fields:
+
+* The port number is still 4000.
+* The Handler object has an ArrayList<String> field named str which now contains ["happy"].
+* The URI object passed to the handleRequest method has the path "/add-message" and the query "s=sad".
+
+Changes in values of fields:
+
+* The str ArrayList in the Handler object will change again as a result of this request. It will add the string "sad" to the list, making its content: ["happy", "sad"].
+
+
+
+
+
+
 
 
 
