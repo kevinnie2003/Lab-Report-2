@@ -146,8 +146,7 @@ Changes in values of fields:
 Here is one example from Lab 3 that has a bug, and I will show how I tested it and the systom, as well as the fixed code.
 
 
-1. 
-A failure inducing input for the buggy program as a test:
+1. A failure inducing input for the buggy program as a test:
     
 ```
   import static org.junit.Assert.*;
@@ -162,8 +161,7 @@ A failure inducing input for the buggy program as a test:
   }
 ```
 
-2. 
-An input that doesn’t induce a failure, as a test:
+2. An input that doesn’t induce a failure, as a test:
 
 ```
   import static org.junit.Assert.*;
@@ -178,15 +176,13 @@ An input that doesn’t induce a failure, as a test:
   }
 ```
 
-3. 
-The symptom, as the output:
+3. The symptom, as the output:
 
 <img width="926" alt="截屏2023-04-19 17 24 37" src="https://user-images.githubusercontent.com/122497019/233502796-1a96f092-209c-411b-b423-f251aa59274d.png">
 
 The bug is that arr value should be passed to newArray, but the code did the opposite way so the empty newArray is passed to newArray. It should return the newArray instead of the original array “arr” as well.
 
-4. 
-The original code with the bug:
+4. The original code with the bug:
     
 ```
   // Returns a *new* array with all the elements of the input array in reversed
