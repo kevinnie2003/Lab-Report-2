@@ -147,6 +147,7 @@ Here is one example from Lab 3 that has a bug, and I will show how I tested it a
 
 
 1. A failure inducing input for the buggy program as a test:
+    
 ```
   import static org.junit.Assert.*;
   import org.junit.*;
@@ -183,6 +184,7 @@ The bug is that arr value should be passed to newArray, but the code did the opp
 
 4.
 The original code with the bug:
+    
 ```
   // Returns a *new* array with all the elements of the input array in reversed
   // order
@@ -193,8 +195,10 @@ The original code with the bug:
     }
     return arr;
   }
+                                  
 ```
 The fixed code:
+                                  
 ```
   // Returns a *new* array with all the elements of the input array in reversed
   // order
